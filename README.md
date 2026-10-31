@@ -2,26 +2,32 @@
 
 A console-based Library Management System developed in C++ using Object-Oriented Programming principles.
 
-This project was created to practice C++ OOP concepts, STL containers, pointers, iterators, and modular project organization.
+This project was created to practice C++ OOP concepts, STL containers, pointers, iterators, file handling, and modular project organization.
 
 ## Features
 
-* Add a new book
-* List all books
-* Search for a book by ID
-* Remove a book by ID
-* Console-based menu system
-* Object-oriented project structure
+- Add a new book
+- List all books
+- Search for a book by ID
+- Remove a book by ID
+- Update book information
+- Prevent duplicate book IDs
+- Validate user inputs
+- Save book records to a text file
+- Load book records when the program starts
+- Skip invalid records while loading data
+- Console-based menu system
 
 ## Technologies
 
-* C++
-* Object-Oriented Programming (OOP)
-* Standard Template Library (STL)
-* `std::vector`
-* Pointers
-* Iterators
-* File and class separation
+- C++
+- Object-Oriented Programming (OOP)
+- Standard Template Library (STL)
+- `std::vector`
+- Pointers
+- Iterators
+- File handling (`ifstream`, `ofstream`)
+- Exception handling (`try-catch`)
 
 ## Project Structure
 
@@ -35,6 +41,8 @@ LibraryManagementSystem/
 ├── src/
 │   ├── Book.cpp
 │   └── Library.cpp
+│
+├── output/
 │
 ├── .gitignore
 ├── README.md
@@ -71,6 +79,10 @@ The library stores books using:
 std::vector<Book>
 ```
 
+### File Handling
+
+Book records are saved to and loaded from `books.txt` using file streams.
+
 ## How to Run
 
 Compile the project using a C++ compiler:
@@ -79,23 +91,28 @@ Compile the project using a C++ compiler:
 g++ main.cpp src/Book.cpp src/Library.cpp -o main
 ```
 
-Then run:
-
-```bash
-./main
-```
-
-On Windows:
+On Windows, run:
 
 ```powershell
 .\main.exe
 ```
 
+The program creates or uses `books.txt` to store book records.
+
 ## Current Version
 
-**v0.1 - Basic Library Management System**
+**v0.2.0 - Improved Library Management System**
 
-The project is currently under development. Future versions will include persistent file storage, book updating, user management, borrowing/returning functionality, exception handling, validation, and automated tests.
+### What's New in v0.2.0?
+
+- Added book updating functionality
+- Added input validation
+- Prevented duplicate book IDs
+- Improved file handling
+- Added invalid record checking when loading data
+- Improved error handling
+
+The project is still under development. Future versions may include user management, borrowing and returning books, and more advanced features.
 
 ## Author
 
