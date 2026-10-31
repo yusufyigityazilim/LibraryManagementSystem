@@ -29,3 +29,18 @@ std::string Book::getTitle() const
 {
                 return title;
 }
+
+std::string Book::getAuthor() const
+{
+                return author;
+}
+
+void Book::setTitle(const std::string& title)
+{
+                this->title = title;
+}
+
+void Book::setAuthor(const std::string& author)
+{
+                this->author = author;
+}

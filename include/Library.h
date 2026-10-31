@@ -10,12 +10,15 @@ class Library
                 std::vector<Book> books;
 
                 public:
-                void addBook(const Book& book);
+                bool addBook(const Book& book);
                 void showAllBooks() const;
 
                 Book* findBook(int id);
 
-                void removeBook(int id);
+                bool removeBook(int id);
+
+                void saveToFile() const;
+                void loadFromFile();
 };
 
 

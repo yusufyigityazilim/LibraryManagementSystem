@@ -18,6 +18,11 @@ class Book
                 int getId() const;
 
                 std::string getTitle() const;
+                std::string getAuthor() const;
+
+                void setTitle(const std::string& title);
+                void setAuthor(const std::string& author);
+                
 };
 
 #endif
